@@ -1,0 +1,8 @@
+void main(){
+    int x;
+    for(x=0;x<190;x=x+1){
+        int z=9090;
+    }
+    int swd=8129;
+    return 0;
+}
