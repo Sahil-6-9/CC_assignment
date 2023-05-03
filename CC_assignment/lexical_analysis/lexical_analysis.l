@@ -430,7 +430,7 @@ int main(){
         }
         int cnt_spec=0;
         int cnt_var=0;
-        int y;
+        int y=-1;
         for(int i=1;i<1000;i++){
             if(temp[i]=='%'){
                 if(i+1<1000 && (temp[i+1]=='d' || temp[i+1]=='c' || temp[i+1]=='s' || temp[i+1]=='f')){
@@ -441,6 +441,10 @@ int main(){
                 y=i;
             }
         }
+        if(y==-1){
+            printf("invalid\n");
+        }
+        else{
         for(;y<1000;y++){
             if(temp[y]==','){
                 cnt_var++;
@@ -451,6 +455,7 @@ int main(){
         }
         else{
             printf("invalid\n");
+        }
         }
         j++;
         strcpy(temp,"");

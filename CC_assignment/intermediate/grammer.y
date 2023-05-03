@@ -29,7 +29,7 @@
         return temp;
     }
     int gencode(char* lhs, char* op, char* rhs){
-        //printf("T%d = %s%s%s\n", tempVariable, lhs, op, rhs);
+        printf("T%d = %s%s%s\n", tempVariable, lhs, op, rhs);
         quad_node[cnt].index=cnt;
         strcpy(quad_node[cnt].Op,op);
         strcpy(quad_node[cnt].arg1,lhs);
@@ -43,7 +43,7 @@
         return tempVariable;
     }
     void assignment(char* lhs, char* rhs){
-        //printf("%s = %s \n", lhs, rhs);
+        printf("%s = %s \n", lhs, rhs);
         quad_node[cnt].index=cnt;
         strcpy(quad_node[cnt].Op,"=");
         strcpy(quad_node[cnt].arg1,rhs);

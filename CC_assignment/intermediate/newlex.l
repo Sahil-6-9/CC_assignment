@@ -28,8 +28,8 @@ digit [0-9]
 "continue"                  {yylval.lexeme = strdup(yytext);  return CONTINUE; }
 "true"                      {yylval.lexeme = strdup(yytext);  return TRUE; }
 "false"                     {yylval.lexeme = strdup(yytext);  return FALSE; }
-[-]?{digit}+                {yylval.lexeme = strdup(yytext);  return NUMBER; }
-[-]?{digit}+\.{digit}{1,6}  {yylval.lexeme = strdup(yytext);  return FLOAT_NUM; }
+{digit}+                {yylval.lexeme = strdup(yytext);  return NUMBER; }
+{digit}+\.{digit}{1,6}  {yylval.lexeme = strdup(yytext);  return FLOAT_NUM; }
 {alpha}({alpha}|{digit})*   {yylval.lexeme = strdup(yytext);  return ID; }
 "<="                        {yylval.lexeme = strdup(yytext);  return LE; }
 ">="                        {yylval.lexeme = strdup(yytext);  return GE; }

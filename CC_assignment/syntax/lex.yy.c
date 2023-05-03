@@ -548,8 +548,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "newlex.l"
-#line 2 "newlex.l"
+#line 1 "Lex.l"
+#line 2 "Lex.l"
     #include "y.tab.h"
     int countn=0;
 #line 556 "lex.yy.c"
@@ -770,7 +770,7 @@ YY_DECL
 		}
 
 	{
-#line 11 "newlex.l"
+#line 11 "Lex.l"
 
 
 #line 777 "lex.yy.c"
@@ -842,219 +842,219 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return PRINTFF; }
+#line 13 "Lex.l"
+{  return PRINTFF; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return MAIN; }
+#line 14 "Lex.l"
+{  return MAIN; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return INT; }
+#line 15 "Lex.l"
+{  return INT; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return FLOAT; }
+#line 16 "Lex.l"
+{  return FLOAT; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return CHAR; }
+#line 17 "Lex.l"
+{  return CHAR; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 18 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return VOID; }
+#line 18 "Lex.l"
+{  return VOID; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 19 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return RETURN; }
+#line 19 "Lex.l"
+{  return RETURN; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 20 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return FOR; }
+#line 20 "Lex.l"
+{  return FOR; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 21 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return IF; }
+#line 21 "Lex.l"
+{  return IF; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 22 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return ELSE; }
+#line 22 "Lex.l"
+{  return ELSE; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 23 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return WHILE; }
+#line 23 "Lex.l"
+{  return WHILE; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 24 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return SWITCH; }
+#line 24 "Lex.l"
+{  return SWITCH; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 25 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return CASE; }
+#line 25 "Lex.l"
+{  return CASE; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 26 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return DEFAULT; }
+#line 26 "Lex.l"
+{  return DEFAULT; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 27 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return BREAK; }
+#line 27 "Lex.l"
+{  return BREAK; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 28 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return CONTINUE; }
+#line 28 "Lex.l"
+{  return CONTINUE; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 29 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return TRUE; }
+#line 29 "Lex.l"
+{  return TRUE; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 30 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return FALSE; }
+#line 30 "Lex.l"
+{  return FALSE; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 31 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return NUMBER; }
+#line 31 "Lex.l"
+{  return NUMBER; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 32 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return FLOAT_NUM; }
+#line 32 "Lex.l"
+{  return FLOAT_NUM; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 33 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return ID; }
+#line 33 "Lex.l"
+{  return ID; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 34 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return LE; }
+#line 34 "Lex.l"
+{  return LE; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 35 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return GE; }
+#line 35 "Lex.l"
+{  return GE; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 36 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return EQ; }
+#line 36 "Lex.l"
+{  return EQ; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 37 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return NE; }
+#line 37 "Lex.l"
+{  return NE; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 38 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return GT; }
+#line 38 "Lex.l"
+{  return GT; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 39 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return LT; }
+#line 39 "Lex.l"
+{  return LT; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 40 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return AND; }
+#line 40 "Lex.l"
+{  return AND; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 41 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return OR; }
+#line 41 "Lex.l"
+{  return OR; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 42 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return ADD; }
+#line 42 "Lex.l"
+{  return ADD; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 43 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return SUBTRACT; }
+#line 43 "Lex.l"
+{  return SUBTRACT; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 44 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return DIVIDE; }
+#line 44 "Lex.l"
+{  return DIVIDE; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 45 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return MULTIPLY; }
+#line 45 "Lex.l"
+{  return MULTIPLY; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 46 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return MODULO; }
+#line 46 "Lex.l"
+{  return MODULO; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 47 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return NOT;}
+#line 47 "Lex.l"
+{  return NOT;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 48 "newlex.l"
+#line 48 "Lex.l"
 { ; }
 	YY_BREAK
 case 37:
 /* rule 37 can match eol */
 YY_RULE_SETUP
-#line 49 "newlex.l"
+#line 49 "Lex.l"
 { ; } 
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 50 "newlex.l"
+#line 50 "Lex.l"
 { ; }
 	YY_BREAK
 case 39:
 /* rule 39 can match eol */
 YY_RULE_SETUP
-#line 51 "newlex.l"
-{countn++; }
+#line 51 "Lex.l"
+{ countn++; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 52 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return *yytext; }
+#line 52 "Lex.l"
+{  return *yytext; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 53 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return STR; }
+#line 53 "Lex.l"
+{  return STR; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 54 "newlex.l"
-{yylval.lexeme = strdup(yytext);  return CHARACTER; }
+#line 54 "Lex.l"
+{  return CHARACTER; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 56 "newlex.l"
+#line 56 "Lex.l"
 ECHO;
 	YY_BREAK
 #line 1061 "lex.yy.c"
@@ -2074,7 +2074,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 56 "newlex.l"
+#line 56 "Lex.l"
 
 
 int yywrap() {

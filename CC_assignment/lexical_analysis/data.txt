@@ -1,20 +1,19 @@
-
-int main()
+#include<stdio.h>
+main()
 {
 	int a;
 	float b=6.5;
-	int c[10][10];
 	for(a=1;a<10;a=a+1)
 	{
 		a = a + 1;
-		
+		printf("%d", a);
 	}
 	// comment
-	c[5][6]=8;
-	c[4][3]=10;
+	if(a>10)
+	  printf("%d %f", a, b);
 	while(b>0)
 	{
 	b=b-2; 
-	
+	printf(" %f", b);
 	}
 }
